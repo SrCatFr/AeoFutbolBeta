@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HaxBall Mobile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            touch-action: none;
+        }
+        #gameCanvas {
+            background: #285c28;
+        }
+        #joystick {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 100px;
+            height: 100px;
+            background: rgba(255,255,255,0.3);
+            border-radius: 50%;
+            touch-action: none;
+        }
+        #kickButton {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 80px;
+            height: 80px;
+            background: rgba(255,0,0,0.3);
+            border-radius: 50%;
+            touch-action: none;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <div id="joystick"></div>
+    <div id="kickButton"></div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/game.js"></script>
+</body>
+</html>
